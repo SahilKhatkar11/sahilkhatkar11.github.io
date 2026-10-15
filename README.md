@@ -6,7 +6,7 @@ Personal portfolio and technical showcase of **Sahil Khatkar**, MCA graduate, so
 
 ## 🚀 Live Demo & Preview
 
-- **Live URL**: [Explore Portfolio](https://github.com/SahilKhatkar)
+- **Live URL**: [Explore Portfolio](https://sahilkhatkar11.github.io/)
 - **Role**: Software Developer · Software Tester & QA
 - **Education**: Master of Computer Applications (MCA) & B.A. (English Hons)
 
