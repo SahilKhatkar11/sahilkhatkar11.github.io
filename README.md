@@ -73,7 +73,7 @@ npm run preview
 
 ## 📬 Connect with Sahil Khatkar
 
-- **Email**: [mr.unknown.007main@gmail.com](mailto:mr.unknown.007main@gmail.com)
+- **Email**: [sahil.khatkar.11@gmail.com](mailto:sahil.khatkar.11@gmail.com)
 - **GitHub**: [@SahilKhatkar](https://github.com/SahilKhatkar)
 - **LinkedIn**: [Sahil Khatkar](https://linkedin.com/in/sahil-khatkar-94578b27b)
 - **Telegram**: [@Sahil_Khatkar](https://t.me/Sahil_Khatkar)
