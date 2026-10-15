@@ -732,7 +732,8 @@ function ProjectModal({ project, onClose }: { project: Project | null; onClose: 
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 glass-modal-backdrop animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-md animate-fade-in"
+      style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}
       onClick={onClose}
     >
       {/* Fixed-Size Frosted Glass Modal Window Container with Tech Grid accents */}
@@ -1046,7 +1047,10 @@ function Navbar() {
 
       {/* Mobile Navigation Floating Overlay Window Modal */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden flex items-start justify-center pt-20 px-4 glass-modal-backdrop animate-fade-in">
+        <div 
+          className="fixed inset-0 z-50 md:hidden flex items-start justify-center pt-20 px-4 bg-black/60 backdrop-blur-md animate-fade-in"
+          style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}
+        >
           <div 
             className="fixed inset-0 -z-10"
             onClick={() => setMobileMenuOpen(false)}
