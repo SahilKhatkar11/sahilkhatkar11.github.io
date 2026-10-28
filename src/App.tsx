@@ -28,7 +28,14 @@ import {
   Terminal,
   ChevronDown
 } from 'lucide-react';
-import fallbackPhoto from './assets/images/sahil_khatkar_photo_1791815471249.jpg';
+import fallbackPhoto from './assets/images/SahilKhatkar_pfp.jpg';
+import pdfpilotImg from './assets/projects/pdfpilot.png';
+import smartplantcareImg from './assets/projects/smartplantcare.png';
+import mcaattendanceImg from './assets/projects/mcaattendance.png';
+import qrpilotImg from './assets/projects/qrpilot.png';
+import ytpilotImg from './assets/projects/ytpilot.png';
+import scorepilotImg from './assets/projects/scorepilot.png';
+import exploreMoreImg from './assets/projects/explore more.png';
 
 // ==========================================
 // 1. DATA MODELS & CONSTANTS
@@ -88,7 +95,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'WebAssembly (WASM)'],
     githubUrl: 'https://github.com/Sahilkhatkar11/pdfpilot',
     liveUrl: 'https://sahilkhatkar11.github.io/pdfpilot/',
-    snapshotImage: 'https://i.ibb.co/4gJBj7H6/pdfpilot.png',
+    snapshotImage: pdfpilotImg,
     description: 'A privacy-first, browser-only PDF toolkit spanning 24 distinct tools (merge, split, compress, sign, sanitize) that runs entirely client-side, eliminating server storage and removing data-privacy risks.',
     dateRange: 'Mar 2026 - Jun 2026',
     keyHighlights: [
@@ -117,7 +124,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     techStack: ['Python', 'TensorFlow', 'Streamlit', 'NumPy', 'Image Classification'],
     githubUrl: 'https://github.com/Sahilkhatkar11/smart-plant-care',
     liveUrl: 'https://smart-plant-care.streamlit.app/',
-    snapshotImage: 'https://i.ibb.co/7qJ07bN/smartplantcare.png',
+    snapshotImage: smartplantcareImg,
     description: 'An AI/ML application that detects plant diseases from leaf imagery with 98–99% accuracy and returns personalized care recommendations via a Streamlit dashboard in under 2 seconds.',
     dateRange: 'Jun 2025 - Aug 2025',
     keyHighlights: [
@@ -143,35 +150,6 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     architectureNotes: 'Convolutional neural network architecture fine-tuned for high-accuracy binary classification paired with a lightweight Streamlit web client.',
   },
   {
-    id: 'mca-attendance',
-    name: 'MCA Attendance System',
-    tagline: 'Lightweight Web Attendance Tracker & Formatter',
-    status: 'Public',
-    primaryLanguage: 'HTML / JS',
-    techStack: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'Responsive Design'],
-    githubUrl: 'https://github.com/Sahilkhatkar11/mca-attendance',
-    liveUrl: 'https://sahilkhatkar11.github.io/mca-attendance/',
-    snapshotImage: 'https://i.ibb.co/SXzHqy3x/mcaattendance.png',
-    description: 'A responsive web-based class attendance system featuring student-wise marking, automatic present/absent tally generation, dark mode, and ready-to-copy WhatsApp/SMS summaries.',
-    dateRange: '2025',
-    keyHighlights: [
-      'Instant present/absent roll tallying with one-tap toggle marking',
-      'One-click clipboard export generator formatted for instant messaging dispatches',
-      'Persistent local session storage preventing data loss during accidental page refresh',
-    ],
-    sdPerspective: [
-      'Engineered pure vanilla JavaScript DOM state manager without heavy framework overhead',
-      'Implemented persistent local browser caching for offline classroom reliability',
-      'Designed responsive dark and light themes matching high-contrast mobile screen needs',
-    ],
-    qaPerspective: [
-      'Tested input sanitization against empty roll lists, duplicate entries, and special characters',
-      'Verified clipboard API compatibility across Android Chrome, iOS Safari, and desktop browsers',
-      'Conducted boundary testing on bulk student rosters exceeding 150+ records',
-    ],
-    architectureNotes: 'Zero-dependency client-side architecture leveraging modern ES6+, CSS variables, and LocalStorage for millisecond-fast responsiveness.',
-  },
-  {
     id: 'qrpilot',
     name: 'QRPilot',
     tagline: 'All-in-One Custom QR Code Studio & Scanner',
@@ -180,7 +158,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     techStack: ['TypeScript', 'React', 'HTML5 Canvas', 'WebRTC', 'Vite'],
     githubUrl: 'https://github.com/Sahilkhatkar11/qrpilot',
     liveUrl: 'https://sahilkhatkar11.github.io/qrpilot/',
-    snapshotImage: 'https://i.ibb.co/GfZ02YJr/qrpilot.png',
+    snapshotImage: qrpilotImg,
     description: 'A modern QR code generator and scanner that allows creating customized codes with gradients, logos, and custom frames, as well as real-time camera scanning.',
     dateRange: '2026',
     keyHighlights: [
@@ -209,7 +187,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     techStack: ['Next.js', 'FastAPI', 'Python', 'yt-dlp', 'FFmpeg', 'TypeScript'],
     githubUrl: 'https://github.com/Sahilkhatkar11/ytpilot',
     liveUrl: 'https://sahilkhatkar11.github.io/ytpilot/',
-    snapshotImage: 'https://i.ibb.co/PH0NwQZ/ytpilot.png',
+    snapshotImage: ytpilotImg,
     description: 'A polished YouTube media processing web application built with Next.js, FastAPI, yt-dlp, and FFmpeg for analyzing links, selecting quality streams, and downloading video or audio.',
     dateRange: '2026',
     keyHighlights: [
@@ -238,7 +216,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     techStack: ['TypeScript', 'React', 'Tailwind CSS', 'Local Storage'],
     githubUrl: 'https://github.com/Sahilkhatkar11/scorepilot',
     liveUrl: 'https://sahilkhatkar11.github.io/scorepilot/',
-    snapshotImage: 'https://i.ibb.co/KxdWB8Dv/scorepilot.png',
+    snapshotImage: scorepilotImg,
     description: 'A modern, responsive leaderboard and score tracker designed to manage competitive rounds effortlessly, calculate live rankings, crown champions, and export styled scorecards.',
     dateRange: '2026',
     keyHighlights: [
@@ -259,6 +237,35 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     architectureNotes: 'Client-driven state management with deterministic sorting algorithms and localized browser storage.',
   },
   {
+    id: 'mca-attendance',
+    name: 'MCA Attendance System',
+    tagline: 'Lightweight Web Attendance Tracker & Formatter',
+    status: 'Public',
+    primaryLanguage: 'HTML / JS',
+    techStack: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'Responsive Design'],
+    githubUrl: 'https://github.com/Sahilkhatkar11/mca-attendance',
+    liveUrl: 'https://sahilkhatkar11.github.io/mca-attendance/',
+    snapshotImage: mcaattendanceImg,
+    description: 'A responsive web-based class attendance system featuring student-wise marking, automatic present/absent tally generation, dark mode, and ready-to-copy WhatsApp/SMS summaries.',
+    dateRange: '2025',
+    keyHighlights: [
+      'Instant present/absent roll tallying with one-tap toggle marking',
+      'One-click clipboard export generator formatted for instant messaging dispatches',
+      'Persistent local session storage preventing data loss during accidental page refresh',
+    ],
+    sdPerspective: [
+      'Engineered pure vanilla JavaScript DOM state manager without heavy framework overhead',
+      'Implemented persistent local browser caching for offline classroom reliability',
+      'Designed responsive dark and light themes matching high-contrast mobile screen needs',
+    ],
+    qaPerspective: [
+      'Tested input sanitization against empty roll lists, duplicate entries, and special characters',
+      'Verified clipboard API compatibility across Android Chrome, iOS Safari, and desktop browsers',
+      'Conducted boundary testing on bulk student rosters exceeding 150+ records',
+    ],
+    architectureNotes: 'Zero-dependency client-side architecture leveraging modern ES6+, CSS variables, and LocalStorage for millisecond-fast responsiveness.',
+  },
+  {
     id: 'more-projects',
     name: 'More Self-Made & Passion Projects',
     tagline: 'Active Open-Source Ecosystem on GitHub',
@@ -266,7 +273,7 @@ export const HIGHLIGHTED_PROJECTS: Project[] = [
     primaryLanguage: 'GitHub Ecosystem',
     techStack: ['TypeScript', 'Python', 'React', 'FastAPI', 'Automation', 'CLI Utilities'],
     githubUrl: 'https://github.com/Sahilkhatkar11',
-    snapshotImage: 'https://i.ibb.co/sdjrVtSm/explore-more.png',
+    snapshotImage: exploreMoreImg,
     description: 'Beyond these highlighted builds, I actively build, experiment, and maintain numerous self-made open-source tools, automation utilities, daily problem-solvers, and testing scripts on GitHub.',
     dateRange: 'Active & Ongoing',
     keyHighlights: [
@@ -1106,8 +1113,7 @@ function Navbar() {
 }
 
 function Hero() {
-  const profileImageUrl = "https://i.ibb.co/Qv6rxwny/Screenshot-20261012-211706-Photos-2.jpg";
-  const [imgSrc, setImgSrc] = useState(profileImageUrl);
+  const [imgSrc, setImgSrc] = useState(fallbackPhoto);
   const [scrollScale, setScrollScale] = useState(1.43);
 
   useEffect(() => {
